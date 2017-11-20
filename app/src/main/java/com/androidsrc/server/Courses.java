@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -57,9 +58,20 @@ public class Courses extends Activity {
                             cou=data;
                             for(int i=1;i<=len;i++){
                                 JSONObject row= data.getJSONObject("id"+i);
+                                final String cid=row.getString("cid");
                                 Button button=new Button(Courses.this);
                                 button.setLayoutParams(lparams);
                                 button.setText(row.getString("cname"));
+                                button.setId(i);
+                                button.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View arg0) {
+                                        Intent inent = new Intent(getApplicationContext(), MainActivity.class);
+                                        inent.putExtra("courses",cid);
+                                        startActivity(inent);
+
+                                                              }
+                                                          });
                                 llayout.addView(button);
 
                             }

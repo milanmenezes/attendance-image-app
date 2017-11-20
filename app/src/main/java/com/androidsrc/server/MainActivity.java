@@ -20,12 +20,13 @@ public class MainActivity extends Activity {
 	Server server;
 	TextView infoip, msg,head;
 	List<String> maclist;
-	Intent intent = getIntent();
-	String course = intent.getStringExtra("courses");
+	String course = new String();
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Intent intent = getIntent();
+		this.course = intent.getStringExtra("courses");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		infoip = (TextView) findViewById(R.id.infoip);
