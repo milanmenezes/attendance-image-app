@@ -11,8 +11,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        />
+        android:fontFamily="sans-serif"
+        android:text="Collecting Attendance"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/infoip"

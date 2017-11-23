@@ -61,14 +61,17 @@
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="wrap_content"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
             android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textSize="30sp"
             android:layout_marginTop="30dp"
-            android:padding="10dp"/>
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

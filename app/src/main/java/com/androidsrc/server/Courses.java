@@ -33,13 +33,25 @@ public class Courses extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courses);
         RequestQueue queue = Volley.newRequestQueue(this);
+        final RequestQueue queue1 = Volley.newRequestQueue(this);
         final ViewGroup.LayoutParams lparams = new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         final LinearLayout llayout = (LinearLayout) findViewById(R.id.lview);
         SharedPreferences sharedpreferences;
         sharedpreferences = getSharedPreferences("login", Context.MODE_PRIVATE);
         String tid=sharedpreferences.getString("id",null);
         String url="http://app.automated-attendance.tk/teacher-courses/"+tid+"/";
+        final String url1="http://app.automated-attendance.tk/total-count/";
+
+        Button webviewbutton = (Button) findViewById(R.id.webviewbutton);
+
+        webviewbutton.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View arg0) {
+                                                 Intent inent = new Intent(getApplicationContext(), TeacherWebView.class);
+                                                 startActivity(inent);
+                                             }
+                                         });
 
 
         // Request a string response from the provided URL.
@@ -50,7 +62,7 @@ public class Courses extends Activity {
                         // Display the first 500 characters of the response string.
 //										mTextView.setText("Response is: "+ response.substring(0,500));
                         Log.d("Log: ",response.toString());
-                        Toast.makeText(getApplicationContext() , response.toString(), Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplicationContext() , response.toString(), Toast.LENGTH_SHORT).show();
                         try {
                             JSONObject json= new JSONObject(response);
                             int len=json.getInt("len");
@@ -63,11 +75,37 @@ public class Courses extends Activity {
                                 button.setLayoutParams(lparams);
                                 button.setText(row.getString("cname"));
                                 button.setId(i);
+
                                 button.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View arg0) {
                                         Intent inent = new Intent(getApplicationContext(), MainActivity.class);
                                         inent.putExtra("courses",cid);
+
+//
+//
+                                        // Request a string response from the provided URL.
+                                        StringRequest stringRequest = new StringRequest(Request.Method.GET, url1+cid,
+                                                new Response.Listener<String>() {
+                                                    @Override
+                                                    public void onResponse(String response) {
+                                                        // Display the first 500 characters of the response string.
+//                                                        mTextView.setText("Response is: "+ response.substring(0,500));
+                                                        Toast.makeText(getApplicationContext() , "Started attendance", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }, new Response.ErrorListener() {
+                                            @Override
+                                            public void onErrorResponse(VolleyError error) {
+//                                                mTextView.setText("That didn't work!");
+                                                Toast.makeText(getApplicationContext() , "Ierror", Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
+// Add the request to the RequestQueue.
+                                        queue1.add(stringRequest);
+
+
+//
+//
                                         startActivity(inent);
 
                                                               }

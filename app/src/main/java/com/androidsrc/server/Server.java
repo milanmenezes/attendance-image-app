@@ -32,12 +32,16 @@ public class Server {
 	static final int socketServerPORT = 8080;
 
 
-
+	Thread socketServerThread;
 	public Server(MainActivity activity,RequestQueue queue) {
 		this.activity = activity;
 		this.queue=queue;
-		Thread socketServerThread = new Thread(new SocketServerThread());
+		socketServerThread = new Thread(new SocketServerThread());
 		socketServerThread.start();
+	}
+
+	public void stopattendance(){
+		socketServerThread.stop();
 	}
 
 	public int getPort() {
@@ -74,16 +78,17 @@ public class Server {
 					Socket socket = serverSocket.accept();
 					count++;
 
-					message += "#" + count + " from "
-							+ socket.getInetAddress() + ":"
-							+ socket.getPort() + "\n";
+//					message += "#" + count + " from "
+//							+ socket.getInetAddress() + ":"
+//							+ socket.getPort() + "\n";
 					final InetAddress address = socket.getInetAddress();
 					final String mac=activity.getMacByIp(address.getHostAddress().toString());
 					if(!L1.contains(mac)){
 						L1.add(mac);
-						r="OK";
+						r="Attendance Given";
 						url=url+activity.course+"/";
 						url=url+mac;
+						message += "Request from: "+mac+"\n";
 
 						// Request a string response from the provided URL.
 						StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -93,8 +98,8 @@ public class Server {
 										// Display the first 500 characters of the response string.
 //										mTextView.setText("Response is: "+ response.substring(0,500));
 										vstatus=response;
-										activity.head.setText("Attendance Given");
-										activity.stoast("Done");
+//										activity.head.setText("Attendance Given");
+//										activity.stoast("Done");
 									}
 								}, new Response.ErrorListener() {
 							@Override
@@ -103,7 +108,7 @@ public class Server {
 								vstatus="Error";
 								r="Database Connection Error";
 								activity.stoast(url);
-								activity.head.setText(r);
+//								activity.head.setText(r);
 							}
 						});
 
@@ -167,7 +172,7 @@ public class Server {
 				printStream.print(msgReply);
 				printStream.close();
 
-				message += "replayed: " + msgReply + "\n";
+				message += "Response: " + msgReply + "\n";
 
 				activity.runOnUiThread(new Runnable() {
 
@@ -210,7 +215,7 @@ public class Server {
 
 					if (inetAddress.isSiteLocalAddress()) {
 						ip += "Server running at : "
-								+ inetAddress.getHostAddress();
+								+ inetAddress.getHostAddress()+"\n";
 					}
 				}
 			}

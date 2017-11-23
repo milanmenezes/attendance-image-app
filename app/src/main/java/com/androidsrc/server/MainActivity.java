@@ -36,6 +36,8 @@ public class MainActivity extends Activity {
 		server = new Server(this,queue);
 		infoip.setText(server.getIpAddress()+":"+server.getPort());
 
+
+
 		
 	}
 
