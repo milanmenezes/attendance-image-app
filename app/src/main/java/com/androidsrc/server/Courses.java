@@ -40,8 +40,8 @@ public class Courses extends Activity {
         SharedPreferences sharedpreferences;
         sharedpreferences = getSharedPreferences("login", Context.MODE_PRIVATE);
         String tid=sharedpreferences.getString("id",null);
-        String url="http://app.automated-attendance.tk/teacher-courses/"+tid+"/";
-        final String url1="http://app.automated-attendance.tk/total-count/";
+        String url="http://192.168.0.2:5000/teacher-courses/"+tid+"/";
+        final String url1="http://192.168.0.2:5000/total-count/";
 
         Button webviewbutton = (Button) findViewById(R.id.webviewbutton);
 
@@ -79,29 +79,29 @@ public class Courses extends Activity {
                                 button.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View arg0) {
-                                        Intent inent = new Intent(getApplicationContext(), MainActivity.class);
+                                        Intent inent = new Intent(getApplicationContext(), attendance.class);
                                         inent.putExtra("courses",cid);
 
 //
 //
-                                        // Request a string response from the provided URL.
-                                        StringRequest stringRequest = new StringRequest(Request.Method.GET, url1+cid,
-                                                new Response.Listener<String>() {
-                                                    @Override
-                                                    public void onResponse(String response) {
-                                                        // Display the first 500 characters of the response string.
-//                                                        mTextView.setText("Response is: "+ response.substring(0,500));
-                                                        Toast.makeText(getApplicationContext() , "Started attendance", Toast.LENGTH_SHORT).show();
-                                                    }
-                                                }, new Response.ErrorListener() {
-                                            @Override
-                                            public void onErrorResponse(VolleyError error) {
-//                                                mTextView.setText("That didn't work!");
-                                                Toast.makeText(getApplicationContext() , "Ierror", Toast.LENGTH_SHORT).show();
-                                            }
-                                        });
-// Add the request to the RequestQueue.
-                                        queue1.add(stringRequest);
+//                                        // Request a string response from the provided URL.
+//                                        StringRequest stringRequest = new StringRequest(Request.Method.GET, url1+cid,
+//                                                new Response.Listener<String>() {
+//                                                    @Override
+//                                                    public void onResponse(String response) {
+//                                                        // Display the first 500 characters of the response string.
+////                                                        mTextView.setText("Response is: "+ response.substring(0,500));
+//                                                        Toast.makeText(getApplicationContext() , "Started attendance", Toast.LENGTH_SHORT).show();
+//                                                    }
+//                                                }, new Response.ErrorListener() {
+//                                            @Override
+//                                            public void onErrorResponse(VolleyError error) {
+////                                                mTextView.setText("That didn't work!");
+//                                                Toast.makeText(getApplicationContext() , "Ierror", Toast.LENGTH_SHORT).show();
+//                                            }
+//                                        });
+//
+//                                        queue1.add(stringRequest);
 
 
 //

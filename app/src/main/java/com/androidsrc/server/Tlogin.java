@@ -43,7 +43,7 @@ public class Tlogin extends Activity {
             @Override
             public void onClick(View arg0) {
 //                final String url="http://app.automated-attendance.tk/teacher-login/"+id.getText()+"/"+password.getText();
-                final String url="http://192.168.0.105:5000/teacher-login/"+id.getText()+"/"+password.getText();
+                final String url="http://192.168.0.2:5000/teacher-login/"+id.getText()+"/"+password.getText();
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                         new Response.Listener<String>() {
                             @Override
