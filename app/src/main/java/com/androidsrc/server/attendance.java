@@ -45,23 +45,28 @@ public class attendance extends Activity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     static final int REQUEST_TAKE_PHOTO = 1;
     private File imagefile;
+    private String course = new String();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance);
-        Button clickImage = (Button) findViewById(R.id.clickPhoto);
+        Intent intent = getIntent();
+        this.course = intent.getStringExtra("courses");
+        final Button clickImage = (Button) findViewById(R.id.clickPhoto);
         clickImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
             imagefile=dispatchTakePictureIntent();
+            clickImage.setEnabled(false);
             }
         });
-        Button process = (Button) findViewById(R.id.process);
+        final Button process = (Button) findViewById(R.id.process);
         process.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
+                process.setEnabled(false);
 
 
                 BasicAWSCredentials credentials = new BasicAWSCredentials("AKIA5IWG22RQYFDQBNAJ", "Ksg4lQdx+3c+m8pRgmj4rmDD9/J/G/QE2a7rNPNo");
@@ -80,7 +85,7 @@ public class attendance extends Activity {
 
 // "jsaS3" will be the folder that contains the file
                 TransferObserver uploadObserver =
-                        transferUtility.upload("app/" + "test.jpg", imagefile);
+                        transferUtility.upload("app/" + imagefile.getName(), imagefile);
 
                 uploadObserver.setTransferListener(new TransferListener() {
 
@@ -89,6 +94,7 @@ public class attendance extends Activity {
                         if (TransferState.COMPLETED == state) {
                             // Handle a completed download.
                             Log.d("log:","transfer complete");
+                            process.setEnabled(true);
                         }
                     }
 
@@ -107,9 +113,9 @@ public class attendance extends Activity {
 
 // If your upload does not trigger the onStateChanged method inside your
 // TransferListener, you can directly check the transfer state as shown here.
-                if (TransferState.COMPLETED == uploadObserver.getState()) {
-                    // Handle a completed upload.
-                }
+//                if (TransferState.COMPLETED == uploadObserver.getState()) {
+//                    // Handle a completed upload.
+//                }
             }
         });
 
@@ -153,7 +159,7 @@ public class attendance extends Activity {
     private File createImageFile() throws IOException {
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String imageFileName = "JPEG_" + timeStamp + "_";
+        String imageFileName = course + "_" + timeStamp + "_";
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(
                 imageFileName,  /* prefix */
