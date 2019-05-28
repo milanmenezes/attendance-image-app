@@ -40,8 +40,8 @@ public class Courses extends Activity {
         SharedPreferences sharedpreferences;
         sharedpreferences = getSharedPreferences("login", Context.MODE_PRIVATE);
         String tid=sharedpreferences.getString("id",null);
-        String url="http://192.168.0.2:5000/teacher-courses/"+tid+"/";
-        final String url1="http://192.168.0.2:5000/total-count/";
+        String url="https://app.automated-attendance.tk/teacher-courses/"+tid+"/";
+
 
         Button webviewbutton = (Button) findViewById(R.id.webviewbutton);
 

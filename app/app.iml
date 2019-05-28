@@ -18,7 +18,7 @@
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
         <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/build/generated/res/resValues/debug" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -27,7 +27,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca47ff6ef38a94a4d0c2e6f0bdcf506f/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/7865c8e810fd8528f8270b57ec863e9d/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/08f376dc31d1261043b64b79c73c3aa2/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/c8a833362727647e579637650408ef87/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/2f03b7270041e031931ac8d410e6fd75/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/856a4619286de291b14c7e3fbaf39924/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/856a4619286de291b14c7e3fbaf39924/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/353ff28108fe464331c74b99cfca4c96/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/353ff28108fe464331c74b99cfca4c96/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/cc6862b29a273b4d638267508d7efcef/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/cc6862b29a273b4d638267508d7efcef/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/3b27ff369f81271ebaef573c66033143/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/3b27ff369f81271ebaef573c66033143/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/41e51781732772c69720602b10401d2d/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/41e51781732772c69720602b10401d2d/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.2.1/8de3aafecbdf98a61db6427f008f2d515bcd2544/support-annotations-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/5fe43f95040abf1c8661365ea5aa4dbc/jars/classes.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/897881802cdb065f13998feb2a10b387/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/40d0c2dcc9a485c8abd3b9e73b955572/jars/classes.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-s3/2.6.31/4dd792b7d206f7ce40ac45cad9c8d8ada73739c5/aws-android-sdk-s3-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognito/2.6.31/a38486061b1e295923f3f0da176c7d6845205991/aws-android-sdk-cognito-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-kms/2.6.31/b630baaeb988af984321e1f8c6f4b3a8fd0dce1d/aws-android-sdk-kms-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.7.7/4eb6cda796f8572c1fcadeabbd9aaeb6bbf60469/aws-android-sdk-core-2.7.7.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.30/bf0edcf669e446e0d903a0681190d1e3df969ac4/kotlin-stdlib-jdk7-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.30/9ea98e65c246d34de9af59c104ad9bdea4908ee/kotlin-stdlib-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.30/989a125fdb6e4d0d75a016032e03e1e3b57a13d/kotlin-stdlib-common-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-appsync-runtime/2.7.9/a34e7a0b722a5261c3cdb450de209d1dc9455e8a/aws-android-sdk-appsync-runtime-2.7.9.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-appsync-api/2.7.9/3c6c9d2a70a943f5a5e29c2f3d9e7b8b04dd85d8/aws-android-sdk-appsync-api-2.7.9.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.1/4d060ca3190df0eda4dc13415532a12e15ca5f11/okhttp-3.8.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.nytimes.android/cache/2.0.2/dd9712ca1fffcb2d5dfbe2878c1b788be9bc7d76/cache-2.0.2.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/milan/Android/Sdk/platforms/android-24/android.jar" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8382a26118dd45eca1418be3f62e89bc/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/9be84dc59a88a95b64ca143581a6de83/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/08d326b65c8c860a59ea05bfdb979707/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/fbb69fb69c09f9a2c8e3aef5eb8edef9/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/bebdad4ababad9004aceec3266d52a5f/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/162408654a67f65fbeac184190cf8c11/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/162408654a67f65fbeac184190cf8c11/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/5bcc5ca6fc91df5fd6f261d0b99f22ec/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/5bcc5ca6fc91df5fd6f261d0b99f22ec/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/1f24125823c10738d82b90faf75c7a88/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/1f24125823c10738d82b90faf75c7a88/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/1aefaa98332ee34355bf946397ee6c16/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/1aefaa98332ee34355bf946397ee6c16/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/19103b683eb5f0762869b309d8f44b1f/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/19103b683eb5f0762869b309d8f44b1f/jars/libs/internal_impl-24.2.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.2.1/8de3aafecbdf98a61db6427f008f2d515bcd2544/support-annotations-24.2.1.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/04f972dada68fa5399e996b9d9521f8b/jars/classes.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/cd8f6450fd23ffeb13dfbfb70cbe1b2d/jars/classes.jar:/home/milan/.gradle/caches/transforms-2/files-2.1/aee0ec5ccb0d151b97e715b7b6362c56/jars/classes.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-s3/2.6.31/4dd792b7d206f7ce40ac45cad9c8d8ada73739c5/aws-android-sdk-s3-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognito/2.6.31/a38486061b1e295923f3f0da176c7d6845205991/aws-android-sdk-cognito-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-kms/2.6.31/b630baaeb988af984321e1f8c6f4b3a8fd0dce1d/aws-android-sdk-kms-2.6.31.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.7.7/4eb6cda796f8572c1fcadeabbd9aaeb6bbf60469/aws-android-sdk-core-2.7.7.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.30/bf0edcf669e446e0d903a0681190d1e3df969ac4/kotlin-stdlib-jdk7-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.30/9ea98e65c246d34de9af59c104ad9bdea4908ee/kotlin-stdlib-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.30/989a125fdb6e4d0d75a016032e03e1e3b57a13d/kotlin-stdlib-common-1.3.30.jar:/home/milan/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-appsync-runtime/2.7.10/ebf0149ff7c56b29f94f336f0faa1e573f8ea373/aws-android-sdk-appsync-runtime-2.7.10.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-appsync-api/2.7.10/b0c1415ebb8a116418692bf7a4e4788e83fdbf54/aws-android-sdk-appsync-api-2.7.10.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.1/4d060ca3190df0eda4dc13415532a12e15ca5f11/okhttp-3.8.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.nytimes.android/cache/2.0.2/dd9712ca1fffcb2d5dfbe2878c1b788be9bc7d76/cache-2.0.2.jar:/home/milan/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar:/home/milan/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/milan/Android/Sdk/platforms/android-24/android.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="app_debug" />
@@ -123,11 +123,13 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundle_dependency_report" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundle_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check_manifest_result" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/compatible_screen_manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/duplicate_classes_check" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/external_libs_dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
@@ -137,7 +139,9 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_main_apk_resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/intermediary_bundle" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/linked_res_for_bundle" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
@@ -145,6 +149,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/metadata_feature_manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/metadata_library_dependencies_report" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/module_bundle" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/processed_res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
@@ -159,6 +165,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/validate_signing_config" />
       <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/reports" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 24 Platform" jdkType="Android SDK" />
@@ -172,15 +179,16 @@
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.2.4@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-auth-core:2.7.7@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:24.2.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-appsync-api:2.7.9@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.volley:volley:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-core:2.7.7@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-appsync-api:2.7.10@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-cognito:2.6.31@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-appsync-runtime:2.7.10@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:24.2.1@jar" level="project" />
@@ -190,7 +198,6 @@
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-mobile-client:2.7.7@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-s3:2.6.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.nytimes.android:cache:2.0.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-appsync-runtime:2.7.9@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.amazonaws:aws-android-sdk-kms:2.6.31@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.30@jar" level="project" />
